@@ -1,19 +1,29 @@
 <html lang="en">
 
 <head>
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>JavaScript on Steroids</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <h2>Challenge 1 : Your Age in Days</h2>
-    <button class="btn btn-primary" onclick="ageindays()">Click Me</button>
-    <button class="btn btn-danger" onclick="reset()">Reset</button>
-    <div id="ageindayss" style="border: 1px solid black;padding:10px"></div>
-    <script src="script.js"></script>
+    <div class="container-1">
+        <h1> Rock Paper Scissors </h1>
+        <div id="flex-box">
+            <img src="https://i.ya-webdesign.com/images/rocks-clipart-animated-2.jpg" id="rock" onclick="rps(this)"
+                height=150 width=150>
+            <img src="https://i.pinimg.com/originals/5f/11/43/5f11435077b9d633d0066916e6b9ebfe.jpg" id="paper"
+                onclick="rps(this)" height=150 width=150>
+            <img src="https://image.shutterstock.com/image-vector/metal-scissors-blue-handlessewing-tailoring-260nw-619566383.jpg"
+                id="scissors" onclick="rps(this)" height=150 width=150>
+        </div>
+        <div style="padding: 10px;"><button class="btn btn-primary" onclick="reset()">RESET</button></div>
+    </div>
+
 </body>
 
 </html>
